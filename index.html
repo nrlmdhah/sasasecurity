@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sasa Security Services Sdn. Bhd. - Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link to Google Fonts for a nicer font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Ensure the html and body take up the full height */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        background-image: url("./images/green.jpg"); /* Path to the background image */
+        background-size: cover; /* Cover the entire page */
+        background-position: center; /* Center the background image */
+        background-attachment: fixed; /* Fix the background while scrolling */
+        color: #ffffff; /* Text color for contrast */
+        font-family: "Roboto", sans-serif; /* Apply the Roboto font */
+      }
+
+      .navbar {
+        background-color: #4f8348;
+        padding: 15px 20px;
+      }
+
+      .navbar-brand,
+      .nav-link {
+        color: #ffffff !important;
+        font-size: 1.1rem;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .navbar-brand:hover,
+      .nav-link:hover {
+        color: #18c0a7 !important;
+      }
+
+      .footer {
+        background-color: #0000006e;
+        color: #ffffff;
+        padding: 30px 20px;
+      }
+
+      .footer a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      .footer-heading {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+
+      .footer .social-icons a {
+        color: #ffffff;
+        margin-right: 15px;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+      }
+
+      .footer .social-icons a:hover {
+        color: #18c0a7;
+      }
+
+      /* Hero section - making it full screen */
+      .hero {
+        background-color: rgba(
+          108,
+          117,
+          125,
+          0.7
+        ); /* Semi-transparent background for hero section */
+        color: #ffffff;
+        padding: 0 20px; /* Adjust padding */
+        min-height: 100vh; /* Full screen height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 3.5rem; /* Larger font size */
+        font-weight: 700; /* Make the title bold */
+        margin-bottom: 20px; /* Space below the title */
+      }
+
+      .hero p {
+        font-size: 1.5rem; /* Larger paragraph text */
+        margin-bottom: 30px; /* Space below the paragraph */
+      }
+
+      /* Button styling */
+      .hero .btn {
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        padding: 12px 30px;
+        border: 2px solid transparent;
+        border-radius: 30px;
+        background-color: #ffffff;
+        color: #000000;
+        text-decoration: none;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .hero .btn .btn-text {
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      .hero .btn .btn-arrow {
+        position: absolute;
+        right: 20px;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+      }
+
+      .hero .btn:hover .btn-text {
+        opacity: 0; /* Hide text on hover */
+      }
+
+      .hero .btn:hover .btn-arrow {
+        opacity: 0; /* Hide the arrow */
+        right: 10px; /* Move arrow closer */
+      }
+
+      .hero .btn:hover {
+        background-color: #95d183;
+        color: #ffffff;
+        border-radius: 30px;
+      }
+
+      .hero .btn:hover .btn-text {
+        opacity: 1; /* Show the text on hover */
+      }
+
+      .hero .btn:hover .btn-arrow {
+        opacity: 1; /* Show the arrow on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="images/sasa.png"
+            alt="Logo"
+            style="width: 40px; height: 40px; margin-right: 10px"
+          />
+          Sasa Security Services
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clients.html">Our Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Welcome to Sasa Security Services</h1>
+        <p>Your safety is our matter</p>
+        <a href="about.html" class="btn btn-light">
+          <span class="btn-text">Learn More About Us</span>
+          <span class="btn-arrow">&#8594;</span>
+          <!-- Simple right arrow -->
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer text-center text-lg-start text-white">
+      <div class="container py-4">
+        <div class="row">
+          <!-- Company Info Section -->
+          <div class="col-md-4">
+            <h5 class="footer-heading">Sasa Security Services Sdn. Bhd.</h5>
+            <p>
+              A-2-11, Pusat Komersial Jalan Kuching, Jalan Kepayang, Off Jalan
+              Kuching, 51200 Kuala Lumpur
+            </p>
+            <p><strong>Phone:</strong> 03-6243 4230</p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:sasasecurity@gmail.com" class="text-white"
+                >sasasecurity@gmail.com</a
+              >
+            </p>
+          </div>
+
+          <!-- Quick Links Section -->
+          <div class="col-md-4">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-white">Home</a></li>
+              <li><a href="about.html" class="text-white">About Us</a></li>
+              <li><a href="clients.html" class="text-white">Our Clients</a></li>
+              <li><a href="contact.html" class="text-white">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Social Media Section -->
+          <div class="col-md-4">
+            <h5 class="footer-heading">Connect with Us</h5>
+            <div class="social-icons">
+              <a href="#" class="text-white me-3">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="text-white me-3">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="#" class="text-white me-3">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="#" class="text-white">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <!-- Copyright Section -->
+        <div class="text-center">
+          <p>
+            &copy; 2025 Sasa Security Services Sdn. Bhd. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Icons CDN for Social Media Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
